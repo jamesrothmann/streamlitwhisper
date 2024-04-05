@@ -29,7 +29,7 @@ def main():
     st.title("Speech to Text Conversion")
     st.write("Upload your audio file and convert it to text using OpenAI's Whisper API.")
 
-    audio_file = st.file_uploader("Upload Audio", type=['mp3'])
+    audio_file = st.file_uploader("Upload Audio", type=['mp3','m4a'])
     
     if audio_file is not None:
         with st.spinner('Transcribing...'):
